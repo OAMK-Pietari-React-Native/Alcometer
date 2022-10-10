@@ -5,6 +5,7 @@ import { ScrollView, Switch, Text, TextInput, View, Alert, Pressable } from 'rea
 import RadioForm from 'react-native-simple-radio-button';
 import NumericInput from 'react-native-numeric-input';
 import { LightTheme, DarkTheme } from './Styles.js';
+import { useFonts } from 'expo-font'
 
 export default function App() {
   const [weight, setWeigth] = useState(0);
@@ -58,6 +59,18 @@ export default function App() {
   //Teeman vaihtokytkin
   const [isOn, setIsOn] = useState(false);
   const theme = isOn ? DarkTheme : LightTheme;
+
+  //Fontit
+  const [loaded] = useFonts({
+    Lora: require('./assets/fonts/Lora-VariableFont_wght.ttf'),
+    Archivo: require('./assets/fonts/ArchivoBlack-Regular.ttf'),
+    Rubik: require('./assets/fonts/RubikMonoOne-Regular.ttf'),
+  });
+
+  if (!loaded) {
+    return null
+  };
+
 
   return (
     <View style={theme.container}>
@@ -139,9 +152,9 @@ export default function App() {
           </Pressable>
         </View>
         <View style={theme.footer}>
-            <Text style={theme.author}>
-                Author: Pietari Tanner
-            </Text>
+          <Text style={theme.author}>
+            Author: Pietari Tanner
+          </Text>
         </View>
       </ScrollView>
     </View>

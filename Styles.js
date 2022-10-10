@@ -1,3 +1,5 @@
+/* ---- Author: Pietari Tanner 2022  ---- */
+
 import { StyleSheet } from "react-native";
 
 // colors:
@@ -5,6 +7,8 @@ import { StyleSheet } from "react-native";
 // primary: #ef7503
 // dark: #b64600
 
+
+// Light theme
 export const LightTheme = StyleSheet.create({
   container: {
     flex: 1,
@@ -14,9 +18,8 @@ export const LightTheme = StyleSheet.create({
     justifyContent: 'center',
   },
   heading: {
-    fontFamily: 'serif',
-    fontSize: 40,
-    fontWeight: 'bold',
+    fontFamily: 'Archivo',
+    fontSize: 45,
     marginBottom: 15
   },
   field: {
@@ -49,7 +52,7 @@ export const LightTheme = StyleSheet.create({
     minHeight: 50,
   },
   buttonText: {
-    fontFamily: 'serif',
+    fontFamily: 'Lora',
     fontSize: 30,
     color: '#ef7503',
   },
@@ -58,6 +61,7 @@ export const LightTheme = StyleSheet.create({
     marginEnd: 30,
   },
   text: {
+    fontFamily: 'Lora',
     fontSize: 25,
   },
   fieldNum: {
@@ -67,8 +71,8 @@ export const LightTheme = StyleSheet.create({
     justifyContent: 'space-between'
   },
   result: {
+    fontFamily: 'Archivo',
     fontSize: 40,
-    fontWeight: 'bold',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -77,8 +81,7 @@ export const LightTheme = StyleSheet.create({
     flexDirection: 'row'
   },
   author: {
-    fontFamily: 'serif',
-    fontWeight: 'bold',
+    fontFamily: 'Rubik',
     flex: 1,
     fontSize: 15,
     textAlign: 'center',
@@ -86,6 +89,8 @@ export const LightTheme = StyleSheet.create({
   },
 });
 
+
+// Light theme
 export const DarkTheme = StyleSheet.create({
   container: {
     flex: 1,
@@ -95,9 +100,8 @@ export const DarkTheme = StyleSheet.create({
     justifyContent: 'center',
   },
   heading: {
-    fontFamily: 'serif',
-    fontSize: 40,
-    fontWeight: 'bold',
+    fontFamily: 'Archivo',
+    fontSize: 45,
     color: '#ef7503',
     marginBottom: 15
   },
@@ -131,7 +135,7 @@ export const DarkTheme = StyleSheet.create({
     minHeight: 50,
   },
   buttonText: {
-    fontFamily: 'serif',
+    fontFamily: 'Lora',
     fontSize: 30,
     color: 'black',
   },
@@ -140,6 +144,7 @@ export const DarkTheme = StyleSheet.create({
     marginEnd: 30,
   },
   text: {
+    fontFamily: 'Lora',
     fontSize: 25,
     color: '#ef7503',
   },
@@ -150,8 +155,8 @@ export const DarkTheme = StyleSheet.create({
     justifyContent: 'space-between'
   },
   result: {
+    fontFamily: 'Archivo',
     fontSize: 40,
-    fontWeight: 'bold',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -160,9 +165,8 @@ export const DarkTheme = StyleSheet.create({
     flexDirection: 'row'
   },
   author: {
-    fontFamily: 'serif',
+    fontFamily: 'Rubik',
     color: '#ef7503',
-    fontWeight: 'bold',
     flex: 1,
     fontSize: 15,
     textAlign: 'center',
